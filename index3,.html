@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Question 👀</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fdf2f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .page {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    img {
+      width: 260px;
+      margin: 20px 0;
+      border-radius: 14px;
+    }
+
+    a {
+        text-decoration: none;
+      padding: 12px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e63950;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PAGE 2
+  <div class="page active" id="page2">
+    <h1>Low-key though 😌</h1>
+    <p>You’re actually a W sister.</p>
+
+    <img 
+      src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" 
+      alt="smile gif"
+    >
+
+    <br>
+    <button onclick="nextPage(3)">Okayyy</button>
+  </div> -->
+
+  <!-- PAGE 3 -->
+  <!-- PAGE 3 -->
+<div class="page active" id="page3">
+  <h1>According to my research 📊</h1>
+  <p>Good sisters deserve good food.</p>
+  <p>Also You’re not gendo😭😭</p>
+
+  <img 
+    src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif" 
+    alt="thinking gif"
+  >
+
+  <br>
+  <a href="index4.html">Makes Sense</a>
+</div>
+
+
+  <script>
+    function nextPage(pageNumber) {
+      document.querySelectorAll('.page')
+        .forEach(p => p.classList.remove('active'));
+
+      document.getElementById('page' + pageNumber)
+        .classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
